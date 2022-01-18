@@ -17,5 +17,5 @@ run:
 build:
 	mkdocs build
 
-deploy
+deploy:
 	mkdocs gh-deploy
