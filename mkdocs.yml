@@ -2,13 +2,11 @@ site_name: Luke Albarracin
 nav:
 - 'About Me' : index.md
 - 'Projects' : projects.md
-#site_url: https://github.com/LukeAlbarracin/portfolio-mkdocs
-#repo_url: https://github.com/LukeAlbarracin/portfolio-mkdocs
-site_description: Luke's Coding Projects
-theme:
-    name: material
-    highlightjs: true
-    hljs_languages:
-        - yaml
-        - rust
-        - clojure
+
+# theme:
+#     name: material
+#     highlightjs: true
+#     hljs_languages:
+#        - yaml
+#        - rust
+#        - clojure
