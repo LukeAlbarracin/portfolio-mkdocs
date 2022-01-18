@@ -1,19 +1,17 @@
-name: Build Documentation using MkDocs
+name: auto build and deploy
 
-# Controls when the action will run. Triggers the workflow on push or pull request
-# events but only for the master branch
 on:
   push:
-    branches: [master]
+    branches: [main]
   pull_request:
-    branches: [master]
+    branches: [main]
 
 jobs:
   build:
-    name: Build and Deploy Documentation
+    name: build and deploy mkdocs
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Master
+      - name: checkout main 
         uses: actions/checkout@v2
       
       - name: Set up Python 3.7
@@ -21,11 +19,11 @@ jobs:
         with:
           python-version: '3.x'
 
-      - name: Install dependencies
+      - name: install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install mkdocs-material
-      - name: Deploy
+      - name: deploy
         run: |
           git pull
           mkdocs gh-deploy
