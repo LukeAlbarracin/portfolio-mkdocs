@@ -5,4 +5,5 @@ Seeking an interdisciplinary internship or co-op in building on my current stren
 Passionate about how Philosophy and Computer Science blend to solve real world problems.
 
 xxx
+yyy
 
